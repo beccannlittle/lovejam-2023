@@ -4,6 +4,8 @@ require "player"
 function love.load()
     love.window.setMode(playingAreaWidth, playingAreaHeight)
 
+    itemSpawner = newTimer(2, )
+
     function reset()
         resetPlayer()
     end
@@ -18,3 +20,4 @@ function love.draw()
     drawStage()
     drawPlayer()
 end
+
